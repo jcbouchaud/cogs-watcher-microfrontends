@@ -1,13 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
+import api from "../apis/DiscogsApi";
 
-interface Alert {
-    id: number,
-    recordId: number
-}
 
 
 const ListingsPage = (): JSX.Element => {
-    
     return (
         <div>
             Listings

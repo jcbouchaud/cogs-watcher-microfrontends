@@ -7,3 +7,7 @@ declare module "alerts/AlertsApp" {
 declare module "listings/ListingsApp" {
 	const mount: (el: HTMLElement | null) => void;
 }
+
+declare module "auth/AuthApp" {
+	const mount: (el: HTMLElement | null) => void;
+}

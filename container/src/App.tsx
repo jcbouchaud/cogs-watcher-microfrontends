@@ -1,11 +1,12 @@
 import React, { Suspense } from 'react';
-import ListingsApp from './pages/ListingsApp';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
 const AlertsApp = React.lazy(() => import('./pages/AlertsApp'));
+const AuthApp = React.lazy(() => import('./pages/AuthApp'));
+const ListingsApp = React.lazy(() => import('./pages/ListingsApp'));
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/listings",
     element: <ListingsApp/>,
+  },
+  {
+    path: "/auth",
+    element: <AuthApp/>,
   }
 ]);
 
